@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h1><a href="index.html">На головну</a></h1>
+	<p>З клавіатури вводиться вік дитини. Вивести на екран через скільки років вона буде відвідувати садочок, піде у
+		школу,
+		закінчить школу, вступить і закінчить</p>
+	<script>
+		const childAge = parseInt(prompt("Enter age of child"))
+		const kindergarden = 3
+		const school = 6
+		const university = 18
+		const universityEnd = 25
+
+		const yearsToKindergarden = (Math.abs(kindergarden - childAge) + (kindergarden - childAge)) / 2
+		const yearsToSchool = (Math.abs(school - childAge) + (school - childAge)) / 2
+		const yearsToUniversity = (Math.abs(university - childAge) + (university - childAge)) / 2
+		const yearsToUniversityEnd = (Math.abs(universityEnd - childAge) + (universityEnd - childAge)) / 2
+
+		document.write(`Child will go to kindergarden in ${yearsToKindergarden} years</br>`)
+		document.write(`Child will go to school in ${yearsToSchool} years</br>`)
+		document.write(`Child will graduate from school and go to university in ${yearsToUniversity} years</br>`)
+		document.write(`Child will graduate from university in ${yearsToUniversityEnd} years`)
+
+	</script>
+</body>
+
+</html>

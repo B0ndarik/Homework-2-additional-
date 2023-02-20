@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h1><a href="index.html">На головну</a></h1>
+	<p>З клавіатури вводиться номер місяця. Визначити, який буде місяць через вказану кількість N місяців.</p>
+	<script>
+		const initialMonth = parseInt(prompt('Enter initial month (1-12)'))
+		const monthsNumber = parseInt(prompt('Enter the amount of months to desired date'))
+		const minMonth = 1
+		const maxMonth = 12
+
+		const monthInFuture = (initialMonth - minMonth + monthsNumber) % (maxMonth - minMonth + 1) + minMonth
+
+		document.write(`${monthInFuture}th month`)
+	</script>
+</body>
+
+</html>

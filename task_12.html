@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h1><a href="index.html">На головну</a></h1>
+	<p>З клавіатури вводиться кількість монет номіналом 2 копійки (5коп, 25коп, 50 коп). Визначити скільки гривень і
+		копійок є у даній сумі.</p>
+	<script>
+		const coin2 = parseInt(prompt("Number of 2 value coins"))
+		const coin5 = parseInt(prompt("Number of 5 value coins"))
+		const coin25 = parseInt(prompt("Number of 25 value coins"))
+		const coin50 = parseInt(prompt("Number of 50 value coins"))
+		const coinsInHrivna = 100
+
+		const coinsTotal = 2 * coin2 + 5 * coin5 + 25 * coin25 + 50 * coin50
+
+		const hrivnas = Math.trunc(coinsTotal / coinsInHrivna)
+		const coins = coinsTotal % coinsInHrivna
+
+		document.write(`${hrivnas} hrivnas ${coins} coins`)
+
+	</script>
+</body>
+
+</html>

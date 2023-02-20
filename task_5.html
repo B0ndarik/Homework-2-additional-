@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h1><a href="index.html">На головну</a></h1>
+	<p>Визначити, яку платню одержить на фірмі сумісник за виконану роботу, якщо йому нараховано S грн., а податок становить
+	20%.</p>
+	<script>
+		const getPayed = parseFloat(prompt("Enter the sum that got employee"))
+		const tax = 20
+
+		const salary = getPayed - getPayed * 20 /100
+
+		document.write(`Employee salary is ${salary.toFixed(2)} UAH`)
+	</script>
+</body>
+</html>

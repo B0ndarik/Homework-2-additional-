@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h1><a href="index.html">На головну</a></h1>
+	<p>З клавіатури вводяться вартість одиниці та кількість одиниць двох товарів. Вивести на екран вартість кожного з видів
+	товарів окремо і загальну вартість.</p>
+	<script>
+		const priceProduct1 = parseFloat(prompt("Enter price of first product"))
+		const amountProduct1 = parseInt(prompt("Enter the amount of first product"))
+		const priceProduct2 = parseFloat(prompt("Enter price of second product"))
+		const amountProduct2 = parseInt(prompt("Enter the amount of second product"))
+
+		const totalPriceProd1 = priceProduct1 * amountProduct1
+		const totalPriceProd2 = priceProduct2 * amountProduct2
+
+		const generalTotal = totalPriceProd1 + totalPriceProd2
+
+		document.write(`Total price of first product = ${totalPriceProd1.toFixed(2)}</br>`)
+		document.write(`Total price of second product = ${totalPriceProd2.toFixed(2)}</br>`)
+		document.write(`Total check amount = ${generalTotal.toFixed(2)}`)
+	</script>
+</body>
+
+</html>

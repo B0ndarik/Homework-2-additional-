@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h1><a href="index.html">На головну</a></h1>
+	<p>Зашифрувати один введений англійський символ у верхньому регістрі (один з символів: A,B,…Z) методом зміщення (шифр
+		Цезаря).</p>
+	<script>
+		const enteredSymbol = (prompt('Enter symbol (A-Z)')).toUpperCase()
+		const shiftNumber = 2
+		const minCodeValue = 65
+		const maxCodeValue = 90
+		
+		const symbolCode = String.fromCharCode((enteredSymbol.charCodeAt(0) - minCodeValue + shiftNumber) % (maxCodeValue - minCodeValue + 1) + minCodeValue)
+
+		document.write(`Char after coding - ${symbolCode}`)
+	</script>
+</body>
+
+</html>
